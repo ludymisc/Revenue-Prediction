@@ -1,4 +1,4 @@
-name: CI Test
+name: ML Integration Test
 
 on:
   push:
@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo test
-        run: echo "CI hidup"
+        run: python 

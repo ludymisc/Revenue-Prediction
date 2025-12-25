@@ -1,7 +1,0 @@
-stages:
-  - test
-
-test-job:
-  stage: test
-  script:
-    - echo "CI jalan, tes success"

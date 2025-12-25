@@ -1,12 +1,24 @@
-name: ML Integration Test
+name: ML CI Test
 
 on:
   push:
   workflow_dispatch:
 
 jobs:
-  test:
+  test-ml:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Testing ML script
-        run: python Presentasi_Kedai_Kopi.py
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install sklearn pandas numpy
+
+      - name: Run ML test
+        run: python test-ml.py

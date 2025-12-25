@@ -8,5 +8,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo test
+      - name: Testing ML script
         run: python Presentasi_Kedai_Kopi.py

@@ -21,4 +21,4 @@ jobs:
         run: pip install sklearn pandas numpy
 
       - name: Run ML test
-        run: python test-ml.py
+        run: python Presentasi_Kedai_Kopi.py

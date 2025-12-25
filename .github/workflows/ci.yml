@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo test
-        run: python 
+        run: python Presentasi_Kedai_Kopi.py
